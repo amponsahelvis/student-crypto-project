@@ -1,6 +1,11 @@
+import dns from 'dns'
 import mongoose from 'mongoose'
 import dotenv from 'dotenv'
 import Crypto from './models/Crypto.js'
+
+// Fix: Windows DNS SRV lookup bug — force Node.js to use Google DNS
+dns.setDefaultResultOrder('ipv4first')
+dns.setServers(['8.8.8.8', '8.8.4.4'])
 
 dotenv.config()
 
