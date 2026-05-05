@@ -1,0 +1,14 @@
+# Instruction files
+readme.md
+
+# Environment files
+backend/.env
+coinbase-clone/.env.local
+
+# Dependencies
+node_modules/
+backend/node_modules/
+coinbase-clone/node_modules/
+
+# Build output
+coinbase-clone/dist/
